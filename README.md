@@ -36,13 +36,9 @@ Its goal is to paginate all the users in the system with the best performance th
 ![Screen-Recording-2024-01-30-at-18 28 31](https://github.com/DanielFrydman/vue-rails-pagination/assets/43658712/bc0a066d-76dd-40a0-a9df-4fffa935c491)
 
 ## :pushpin: Information
-You can test the application in the following URL: **link**.
+Since I have a free account on Render and I already have an application working at the moment, I can't add another there.
 <br>
-The page may take a while to load as it is a free service and the system sleeps but once it loads, it is quick.
-<br>
-The PostgreSQL DB in Render will be erased after 90 days.
-<br>
-***Please be aware that the link may be inactive, depending on when you access my repository, as the Render database associated with the free version could potentially have expired. Thank you for your understanding.***
+I did configure this application to be deployed, but, right now, I won't because it's a more simple project and, following the steps below, you can test it without problems. 
 
 ## 📁 Access to the project
 ```shell
