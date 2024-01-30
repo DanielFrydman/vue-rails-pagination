@@ -14,6 +14,13 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  SimpleCov.start
+  SimpleCov.start do
+    add_filter 'config'
+    add_filter 'spec/factories'
+    add_filter 'spec/rails_helper.rb'
+  end
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
