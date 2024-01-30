@@ -33,8 +33,8 @@ module VueRailsPagination
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'your_vue_app_url'
-        resource '*', headers: :any, methods: %i[get]
+        origins Rails.env.development? ? 'http://localhost:5173' : 'https://your-production-url.com'
+        resource '*', headers: :any, methods: %i[get], credentials: true
       end
     end
   end
