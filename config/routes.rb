@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   namespace :v1 do
-    resource :user, only: [:index]
+    resources :users, only: [:index]
   end
 end
