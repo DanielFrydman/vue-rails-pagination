@@ -30,5 +30,12 @@ module VueRailsPagination
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'your_vue_app_url'
+        resource '*', headers: :any, methods: %i[get]
+      end
+    end
   end
 end
