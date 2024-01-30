@@ -9,6 +9,8 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+return if User.count.positive?
+
 500.times do |i|
   FactoryBot.create(:user)
 end
