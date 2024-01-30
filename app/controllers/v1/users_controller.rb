@@ -3,7 +3,8 @@
 module V1
   class UsersController < ApplicationController
     def index
-      render json: { result: User.all }, status: :ok
+      @pagy, @records = pagy(User.all)
+      render json: { pagy: @pagy, records: @records }, status: :ok
     end
   end
 end
